@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "five-ws-one-h-api"
+version = "0.1.0"
+description = ""
+authors = ["Soichiro Ota <libarta.official@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+Flask = "^2.0.2"
+Flask-DebugToolbar = "^0.11.0"
+Flask-Bootstrap = "^3.3.7"
+python-dotenv = "^0.19.2"
+marshmallow = "^3.14.1"
+Flask-Cors = "^3.0.10"
+gunicorn = "^20.1.0"
+Jinja2 = "~=3.0.2"
+pyknp = "^0.6.1"
+unidic2ud = "^2.9.6"
+deplacy = "^2.0.3"
+numpy = "^1.23.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+black = "~=22.3.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest-cov = "^3.0.0"
+pytest-sugar = "^0.9.4"
+spacy = "^2.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = "black"
+line_length = 119

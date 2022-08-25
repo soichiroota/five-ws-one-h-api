@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  web:
+    image: web
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/opt/app"
+    ports:
+      - "5001:5000"
+    environment:
+      - FLASK_ENV=development
